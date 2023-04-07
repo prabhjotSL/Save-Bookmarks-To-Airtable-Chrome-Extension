@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Save Bookmarks to Airtable</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="title">Save Bookmarks to Airtable</div>
+
+      <div class="form-group">
+        <label for="airtable_key">Airtable Key or Token</label>
+        <input type="password" id="airtable_key" placeholder="Enter Airtable Key or Token" />
+      </div>
+      <div class="form-group">
+        <label for="airtable_base">Base ID</label>
+        <input type="text" id="airtable_base" placeholder="Enter Base ID" />
+      </div>
+      <div class="form-group">
+        <label for="airtable_table">Table ID</label>
+        <input type="text" id="airtable_table" placeholder="Enter Table ID" />
+      </div>
+      <div class="form-group">
+        <label for="airtable_table">Close Tabs?</label>
+        <input type="checkbox" id="close_tabs" checked />
+      </div>
+
+      <button id="saveTabsButton" class="button">Save Tabs to Airtable</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

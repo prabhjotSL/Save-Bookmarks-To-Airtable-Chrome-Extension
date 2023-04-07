@@ -1,0 +1,105 @@
+/* normalize css starts here */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* normalize css ends here */
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif;
+  color: #222;
+}
+
+body {
+  width: 300px;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #064c8a;
+}
+
+.button {
+  border: 0;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 4px;
+  margin-left: 4px;
+  background-color: #1e99dc;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  user-select: none;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.divider {
+  margin: 30px auto 25px;
+  width: 50px;
+  border: 0.5px dashed #000;
+  opacity: 0.1;
+}
+
+.form-group {
+  width: 100%;
+}
+
+input {
+  border: 1px solid #1e99dc;
+  padding: 10px;
+  font-size: 1rem;
+  color: #676767;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px #ececec;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #fdfdfd;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="checkbox"]  {
+  width: auto;
+  display: flex;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  color: #676767;
+  text-align: left;
+  font-weight: 600;
+}
